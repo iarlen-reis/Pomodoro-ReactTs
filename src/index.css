@@ -148,12 +148,20 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
 
-  background: red;
+  border-radius: 4px;
+
+  background: #80808088;
+
 
   margin-top: 1.5rem;
 
+}
+
+.working .pomodoro .details {
+  background: #EF5D50;
+  color: #fff;
 }
 
 
