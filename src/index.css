@@ -60,6 +60,10 @@ body {
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   max-width: 150px;
   width: 100%;
 
@@ -86,16 +90,72 @@ body {
 }
 
 .button.start {
-  background: rgb(69, 180, 36);
+  background: #45b424;
+}
+
+.button.start:hover {
+  background: #427732;
 }
 
 .button.stop {
   background: crimson;
 }
 
+.button.stop:hover {
+  background: rgb(174, 21, 51);
+}
+
 .button.reset {
   background: gray;
 }
+
+.button.reset:hover {
+  background: rgb(104, 104, 104);
+}
+
+.working .button.start {
+  background: #EF5D50;
+}
+
+.working .button.start:hover {
+  background: #c34338;
+}
+
+.working .button.stop {
+  background: crimson;
+}
+
+.working .button.stop:hover {
+  background: rgb(168, 16, 46);
+}
+
+.working .button.reset {
+  background: #EF5D50;
+}
+
+.working .button.reset:hover {
+  background: #be4136;
+}
+
+.pomodoro .details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  text-align: start;
+
+  text-transform: uppercase;
+  font-weight: bold;
+
+  padding: 0.5rem 1rem;
+
+  background: red;
+
+  margin-top: 1.5rem;
+
+}
+
 
 @media (max-width: 550px) {
 
@@ -141,5 +201,4 @@ body {
     padding: 0.4rem 0.5rem;
 
   }
-}
 }
